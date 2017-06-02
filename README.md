@@ -22,7 +22,7 @@ Moving objects fluidly is much easier said than done. Depending on how you organ
 
 Whenever, an object appeared on the screen, this object would get pushed into one of many arrays handled by the game class: `enemies`, `bullets`, `enemyBullets`, and vice versa. This reduces the amount of calculations needed by separating the duties of each array of objects. Had all object been placed into one large array, a very large conditional would be required to determine what function to call and every single permutation of object pairs would need to be calculated.
 
-To move the objects, the `MovingObject` class would have a basic `move()` function for basic linear movement, but this would be rewritten for individual class which required more advanced movement patterns. The game would initiate a constant `setInterval` at 60 frames per second and call this `move()` function.
+To move the objects, the `MovingObject` class would have a basic `move()` function for basic linear movement, but this would be rewritten for individual classes which required more advanced movement patterns. The game would initiate a constant `setInterval` at 60 frames per second and call this `move()` function.
 
 
 General game interval logic:
