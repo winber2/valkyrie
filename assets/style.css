@@ -147,3 +147,76 @@ section.end.active {
 section.playing {
   display: none;
 }
+
+section.pause {
+  display: none;
+}
+
+section.paused {
+  position: static;
+  display: flex;
+  flex-direction: column;
+}
+
+section.paused button {
+  position: relative;
+  z-index: 999;
+}
+
+button.restart {
+  margin-top: 400px;
+}
+
+section.paused div {
+  position: absolute;
+  height: 900px;
+  width: 600px;
+  margin: 0;
+  top: 1px;
+  left: 0px;
+  background: grey;
+  opacity: 0.7;
+}
+
+ul.links {
+  display: flex;
+  flex-direction: column;
+}
+
+figure {
+  margin: 0;
+  margin-top: 10px;
+}
+
+figure.github:hover {
+  background-color: #264161;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+figure.linkedin:hover {
+  background-color: #264161;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+figure.github {
+  background-image: url('./github-icon.png');
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+}
+
+figure.linkedin {
+  background-image: url('./linkedin.png');
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+}
+
+a {
+  display: block;
+  height: 50px;
+  width: 50px;
+}
